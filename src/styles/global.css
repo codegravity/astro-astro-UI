@@ -1,3 +1,18 @@
+
+@import "tailwindcss";
+@plugin "daisyui" {
+	themes: nord --default, dark --emerald, light;
+}
+
+@plugin "daisyui/theme" {
+  name: "nord";
+  default: true;
+  --color-primary: #22427A;
+  --color-secondary: #3360AE;
+  --skysport: #3360AE;
+	--skysport-dark: #22427A;
+}
+
 /*
   The CSS in this style tag is based off of Bear Blog's default CSS.
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
@@ -5,6 +20,8 @@
  */
 
 :root {
+	--skysport: #3360AE;
+	--skysport-dark: #22427A;
 	--accent: #2337ff;
 	--accent-dark: #000d8a;
 	--black: 15, 18, 25;
@@ -56,7 +73,7 @@ h4,
 h5,
 h6 {
 	margin: 0 0 0.5rem 0;
-	color: rgb(var(--black));
+	/*color: rgb(var(--black));*/
 	line-height: 1.2;
 }
 h1 {

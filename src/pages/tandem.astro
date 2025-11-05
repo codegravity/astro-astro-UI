@@ -1,0 +1,29 @@
+---
+import Layout from '@layouts/MainLayout.astro';
+import { Image } from 'astro:assets';
+import VideoHero from "@components/sections/VideoHero.astro";
+import Hero from "@components/sections/Hero.astro";
+import HeroImage from '../assets/images/IMG_7595.jpg';
+
+
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+
+const VideoContent = {
+    title: "Tandemflyg hos Skysport",
+    description: "A good place to start.",
+    backgroundVideo: VideoHero,
+    overlayOpacity: 0.2
+}
+
+const HeroContent = {
+    title: "Tandemflyg hos Skysport",
+    description: "A good place to start.",
+    backgroundImage: HeroImage,
+    overlayOpacity: 0.2
+}
+---
+
+<Layout>
+	<!-- <VideoHero content={VideoContent}/> -->
+    <Hero content={HeroContent}/>
+</Layout>
