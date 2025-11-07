@@ -22,12 +22,23 @@ const getLogoClass = () => {
 };
 ---
 
-<a href="/" class:list={['logo uppercase font-logo transition-colors duration-200 font-light', getLogoClass()]}>
+<a href="/" class:list={['logo h-auto max-w-2xs uppercase font-logo transition-colors duration-200 font-light', getLogoClass()]}>
     {
         // If image is the only element in this link, its alt attribute should be a textual representation.
         // Please, use something like your company name or “Home”, not “logo.”
         // If there is link text, leave alt empty.
     }
-    <Image src={logo} alt="Skysport" class=" rounded-l-lg pt-0" height="108"/>
+    <Image 
+        src={logo} 
+        alt="Skysport" 
+        class=" rounded-l-lg pt-0 " 
+        width={468}
+        height={86}
+        decoding="async"
+        loading="lazy"
+        format="webp"
+        layout="constrained" 
+
+    />
   <!--   <span class="font-bold">Paragliding school and gear shop</span>  -->
 </a>
