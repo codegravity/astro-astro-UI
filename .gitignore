@@ -24,6 +24,6 @@ pnpm-debug.log*
 .idea/
 
 # test files
- src/components/ui/Hamburger.astro
-  src/components/ui/Hamburger2.astro
-   src/components/ui/Hamburger3.astro
+src/components/ui/Hamburger.astro
+src/components/ui/Hamburger2.astro
+src/components/ui/Hamburger3.astro
