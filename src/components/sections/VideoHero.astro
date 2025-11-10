@@ -6,15 +6,23 @@ import Button from '@components/ui/Button.astro';
 const { content } = Astro.props;
 const opacity = content.overlayOpacity ?? 1; // Default opacity if not specified
 const myVideo = content.backgroundVideo;
+const pageLink = content.page;
+
 ---
 
-
+ <!-- <source src={myVideo} type="video/mp4" />  -->
 <section class="  ">
   
     <div class="absolute inset-0 left-0 top-0 w-full h-full overflow-hidden object-cover "> 
         <video autoplay loop muted playsinline class="background-video" > 
-            <!-- <source src={myVideo} type="video/mp4" />  -->
-            <source src=" https://strapi-cdn-2.s3.eu-north-1.amazonaws.com/dji_mimo_20250606_194738_20250606194739_1749364820154_video.MP4" type="video/mp4" >
+            {content.page === "about" ?
+                <source src={myVideo} type="video/mp4" />
+            :
+           
+         
+                <source src=" https://strapi-cdn-2.s3.eu-north-1.amazonaws.com/dji_mimo_20250606_194738_20250606194739_1749364820154_video.MP4" type="video/mp4" >
+            }
+          
         </video> 
             </div> 
             <div class="hero-background absolute inset-0 left-0 top-0 w-full h-full overflow-hidden" style={`opacity: ${opacity};`} ></div>  

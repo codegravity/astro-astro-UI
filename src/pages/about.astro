@@ -1,7 +1,19 @@
 ---
 import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
 import Layout from '../layouts/BlogPost.astro';
+import VideoHero from "@components/sections/VideoHero.astro";
+import myVideo from '../assets/videos/kirkenesjune5.mp4';
+import LogoImage from '../assets/images/Skysport_Logo-01-invert-468.png';
+const VideoContent = {
+    title: "Skärmflyg i Åre ",
+    description: "Skärmflygutbildning, Butik, Resor och Tandemflygning från Åreskutan. ",
+    backgroundVideo: myVideo,
+    descriptionImage: LogoImage,
+    overlayOpacity: 0.2,
+	page: "about"
+}
 ---
+
 
 <Layout 
 	title="About Me"
@@ -9,6 +21,8 @@ import Layout from '../layouts/BlogPost.astro';
 	pubDate={new Date('August 08 2021')}
 	heroImage={AboutHeroImage}
 >
+
+<VideoHero content={VideoContent}/> 
 	<p>
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 		labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo
