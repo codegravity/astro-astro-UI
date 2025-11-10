@@ -6,14 +6,20 @@ import { defineConfig } from 'astro/config';
 import tailwindcss from "@tailwindcss/vite";
 import icon from 'astro-icon';
 
+import vercel from '@astrojs/vercel';
+
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://example.com',
-    integrations: [mdx(), sitemap(), icon()],
-    vite: {
-    plugins: [tailwindcss()],
-  	},
-      image: {
-    responsiveStyles: true,
+  site: 'https://example.com',
+  integrations: [mdx(), sitemap(), icon()],
+
+  vite: {
+  plugins: [tailwindcss()],
   },
+
+  image: {
+responsiveStyles: true,
+},
+
+  adapter: vercel(),
 });
