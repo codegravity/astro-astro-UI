@@ -18,6 +18,9 @@ Features:
 - ✅ Tailwind CSS
 - ✅ Daisy UI
 - ✅ Astro Icon
+- ✅ Mux/Astro video
+- ✅ Mux video ( html video replacement)
+
 
 
 ## 🚀 Project Structure

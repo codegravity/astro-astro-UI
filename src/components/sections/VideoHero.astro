@@ -2,6 +2,7 @@
 //import {  Vimeo, YouTube } from 'astro-embed';
 import { Image } from 'astro:assets';
 import Button from '@components/ui/Button.astro';
+import { MuxPlayer } from "@mux/mux-player-astro";
 
 const { content } = Astro.props;
 const opacity = content.overlayOpacity ?? 1; // Default opacity if not specified
@@ -12,10 +13,14 @@ const myVideo = content.backgroundVideo;
 <section class="  ">
   
     <div class="absolute inset-0 left-0 top-0 w-full h-full overflow-hidden object-cover "> 
-        <video autoplay loop muted playsinline class="background-video" > 
-            <!-- <source src={myVideo} type="video/mp4" />  -->
+        <MuxPlayer
+            playbackId="i300GCdA9vOqC6Tztb0094dPVqoQwpDDqB00tbn7XePpAw"
+            metadata={{ video_title: 'Mux test' }}
+        />
+<!--         <video autoplay loop muted playsinline class="background-video" > 
+             <source src={myVideo} type="video/mp4" />  
             <source src=" https://strapi-cdn-2.s3.eu-north-1.amazonaws.com/dji_mimo_20250606_194738_20250606194739_1749364820154_video.MP4" type="video/mp4" >
-        </video> 
+        </video>  -->
             </div> 
             <div class="hero-background absolute inset-0 left-0 top-0 w-full h-full overflow-hidden" style={`opacity: ${opacity};`} ></div>  
    
