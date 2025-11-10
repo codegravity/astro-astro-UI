@@ -9,18 +9,40 @@ const opacity = content.overlayOpacity ?? 1; // Default opacity if not specified
 const myVideo = content.backgroundVideo;
 ---
 
-
+<!-- <script>import '@mux/mux-video'</script> -->
 <section class="  ">
   
     <div class="absolute inset-0 left-0 top-0 w-full h-full overflow-hidden object-cover "> 
-        <MuxPlayer
-            playbackId="i300GCdA9vOqC6Tztb0094dPVqoQwpDDqB00tbn7XePpAw"
-            metadata={{ video_title: 'Mux test' }}
+ <!--        <mux-video
+            playback-id="BxGyRsPLPdo016wxiCpV7WOInHh7CQfv1jmpQSZbtaS8"
+            metadata-video-title="mux-test"
+            style="width: 100%; border: none; aspect-ratio: 16/9;"
+            autoplay
+            loop
+            muted
+            controls
+            disable-tracking
+            >
+        </mux-video>  -->
+
+<!--           <iframe
+                src="https://player.mux.com/i300GCdA9vOqC6Tztb0094dPVqoQwpDDqB00tbn7XePpAw?mute=true;autoplay=true&metadata-video-title=Kirkenesday2&video-title=Kirkenesday2"
+                style="width: 100%; border: none; aspect-ratio: 16/9;"
+                allow="accelerometer; gyroscope; autoplay; encrypted-media; mute; "
+                allowfullscreen    
+                >
+            </iframe>   -->
+         <MuxPlayer
+            playbackId="zXsxUERMfPmPcQKje3ABvkW78ZZXSirJVoYcLcvk01N4"
+            muted
+            autoplay
         />
-<!--         <video autoplay loop muted playsinline class="background-video" > 
+
+<!--        <video autoplay loop muted playsinline class="background-video" > 
              <source src={myVideo} type="video/mp4" />  
             <source src=" https://strapi-cdn-2.s3.eu-north-1.amazonaws.com/dji_mimo_20250606_194738_20250606194739_1749364820154_video.MP4" type="video/mp4" >
-        </video>  -->
+        </video> -->
+          
             </div> 
             <div class="hero-background absolute inset-0 left-0 top-0 w-full h-full overflow-hidden" style={`opacity: ${opacity};`} ></div>  
    
