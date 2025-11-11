@@ -18,6 +18,7 @@ Features:
 - ✅ Tailwind CSS
 - ✅ Daisy UI
 - ✅ Astro Icon
+- ✅ Astro Partytown
 
 
 ## 🚀 Project Structure

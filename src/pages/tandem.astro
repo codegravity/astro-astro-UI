@@ -4,6 +4,8 @@ import { Image } from 'astro:assets';
 import VideoHero from "@components/sections/VideoHero.astro";
 import Hero from "@components/sections/Hero.astro";
 import HeroImage from '../assets/images/IMG_7595.jpg';
+import LogoImage from '../assets/images/Skysport_Logo-01-invert-468.png';
+import myVideo from '../assets/videos/tandem-25.mp4';
 
 
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
@@ -11,8 +13,11 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 const VideoContent = {
     title: "Tandemflyg hos Skysport",
     description: "A good place to start.",
-    backgroundVideo: VideoHero,
-    overlayOpacity: 0.2
+    backgroundVideo: myVideo,
+    overlayOpacity: 0.2,
+    page: "tandem",
+    descriptionImage: LogoImage,
+
 }
 
 const HeroContent = {
@@ -24,6 +29,7 @@ const HeroContent = {
 ---
 
 <Layout>
-	<!-- <VideoHero content={VideoContent}/> -->
-    <Hero content={HeroContent}/>
+	 <VideoHero content={VideoContent}/> 
+    <!--<Hero content={HeroContent}/>-->
+    <p>Här kan vi kägg till mer innehåll om tandem, typ vädr länker, piloter, boknings  formular mm.</p>
 </Layout>
