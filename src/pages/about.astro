@@ -1,9 +1,10 @@
 ---
-import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
-import Layout from '../layouts/BlogPost.astro';
+import Layout from '@layouts/MainLayout.astro';
 import VideoHero from "@components/sections/VideoHero.astro";
-import myVideo from '../assets/videos/kirkenesjune5.mp4';
 import LogoImage from '../assets/images/Skysport_Logo-01-invert-468.png';
+import myVideo from '../assets/videos/kirkenesjune5.mp4';
+
+
 const VideoContent = {
     title: "Skärmflyg i Åre ",
     description: "Skärmflygutbildning, Butik, Resor och Tandemflygning från Åreskutan. ",
@@ -12,15 +13,12 @@ const VideoContent = {
     overlayOpacity: 0.2,
 	page: "about"
 }
+
+
 ---
 
 
-<Layout 
-	title="About Me"
-	description="Lorem ipsum dolor sit amet"
-	pubDate={new Date('August 08 2021')}
-	heroImage={AboutHeroImage}
->
+<Layout >
 	<VideoHero content={VideoContent}/> 
 	<p>
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
