@@ -7,10 +7,9 @@ import { Icon } from 'astro-icon/components';
 ---
 
 <header class="sticky inset-x-0  z-50 flex w-full flex-wrap text-sm md:flex-nowrap md:justify-start ">
-	<nav class="relative w-full  border border-yellow-100/40 bg-white/50 px-4 py-3 backdrop-blur-md  md:flex md:items-center md:justify-between sm:px-0 md:px-2 md:py-0 lg:px-8 xl:mx-auto" aria-label="Global">
-	<div class="navbar px-0 py-0 w-full">
-		<div class="navbar-start w-full min-w-sm">	
-			
+	<nav class="relative w-full h-content border border-yellow-100/40 bg-white/50 p-0 lg:px-4 lg:py-3 backdrop-blur-md  md:flex md:items-center md:justify-between sm:px-0 md:px-2 md:py-0 lg:px-8 xl:mx-auto" aria-label="Global">
+	<div class="navbar p-0 w-full flex justify-start lg:justify-between ">
+		<div class="navbar-start w-full p-0 lg:min-w-sm lg:w-16">		
 			<Logo />
 		</div>
 		<div class="navbar-center hidden lg:flex menu menu-horizontal px-1">
@@ -22,8 +21,8 @@ import { Icon } from 'astro-icon/components';
 				<HeaderLink href="/blog">Butik</HeaderLink>	
 			</div>
 		</div>
-		<div class="navbar-end">
-			<div class="social-links items-center">	
+		<div class=" lg:w-content pl-0 flex-none">
+			<div class="social-links flex flex-row flex-end">	
 				<a href="https://facebook.com/skysport.se" target="_blank">
 					<Icon name="logos--facebook (5)" class=" sm:text-2xl md:text-3xl xl:text-5xl"/>
 					<span class="sr-only">Follow Astro on Mastodon</span>

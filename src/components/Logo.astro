@@ -22,7 +22,7 @@ const getLogoClass = () => {
 };
 ---
 
-<a href="/" class:list={['logo h-auto max-w-2xs uppercase font-logo transition-colors duration-200 font-light', getLogoClass()]}>
+<a href="/" class:list={['logo h-auto max-w-[200px]  p-0 lg:max-w-2xs uppercase font-logo transition-colors duration-200 font-light', getLogoClass()]}>
     {
         // If image is the only element in this link, its alt attribute should be a textual representation.
         // Please, use something like your company name or “Home”, not “logo.”
@@ -31,7 +31,7 @@ const getLogoClass = () => {
     <Image 
         src={logo} 
         alt="Skysport" 
-        class=" rounded-l-lg pt-0 " 
+        class="  max-w-full " 
         width={468}
         height={86}
         decoding="async"
