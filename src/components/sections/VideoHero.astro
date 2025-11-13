@@ -14,8 +14,8 @@ const pageLink = content.page;
  <!-- <source src={myVideo} type="video/mp4" />  -->
 <section class=" ">
   
-    <div class=" lg:absolute lg:inset-0 lg:left-0 lg:top-0 lg:w-full h-screen  overflow-hidden object-cover "> 
-        <video autoplay loop muted playsinline class=" h-screen min-h-full "  > 
+    <div class=" lg:absolute lg:inset-0 lg:left-0 lg:top-0 lg:w-full h-screen  overflow-hidden  "> 
+        <video autoplay loop muted playsinline class=" h-screen min-h-full object-cover "  > 
             {content.page === "about" &&
                 <source src={myVideo} type="video/mp4" />
         }
