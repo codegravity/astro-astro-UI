@@ -12,6 +12,28 @@ import { Icon } from 'astro-icon/components';
 		<div class="navbar-start w-full p-0 lg:min-w-sm lg:w-16">		
 			<Logo />
 		</div>
+		<div class="dropdown ">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+      </div>
+      <ul
+        tabindex="-1"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        <li><HeaderLink href="/">BUTIK</HeaderLink></li>
+		<li><HeaderLink href="/tandem">TANDEM</HeaderLink></li>
+        <li>
+          <HeaderLink href="/about">KURS</HeaderLink>
+          <ul class="p-2">
+            <li><a>Submenu 1</a></li>
+            <li><a>Submenu 2</a></li>
+          </ul>
+        </li>
+        <li><HeaderLink href="/tandem">RESOR</HeaderLink></li>
+		<li><HeaderLink href="/tandem">OM OSS</HeaderLink></li>
+      </ul>
+    </div>
+   
+  </div>
 		<div class="navbar-center hidden lg:flex menu menu-horizontal px-1">
 			<div class="internal-links">
 				<HeaderLink href="/">BUTIK</HeaderLink>
@@ -21,8 +43,8 @@ import { Icon } from 'astro-icon/components';
 				<HeaderLink href="/blog">OM OSS</HeaderLink>	
 			</div>
 		</div>
-		<div class=" lg:w-content pl-0 flex-none">
-			<div class="social-links flex flex-row flex-end">	
+		<div class="navbar-end  lg:w-content pl-0 flex-none">
+			<div class="social-links  lg:flex flex-row flex-end">	
 				<a href="https://facebook.com/skysport.se" target="_blank">
 					<Icon name="logos--facebook (5)" class=" sm:text-2xl md:text-3xl xl:text-5xl"/>
 					<span class="sr-only">Follow Astro on Mastodon</span>
