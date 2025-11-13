@@ -4,6 +4,9 @@ import VideoHero from "@components/sections/VideoHero.astro";
 import LogoImage from '../assets/images/Skysport_Logo-01-invert-468.png';
 import myVideo from '../assets/videos/tandem-25.mp4';
 
+import Hero from "@components/sections/Hero.astro";
+import HeroImage from '../assets/images/IMG_7595.jpg';
+
 
 const VideoContent = {
     title: "Skärmflyg i Åre ",
@@ -13,14 +16,20 @@ const VideoContent = {
     overlayOpacity: 0.2,
 	page: "about"
 }
-
+const HeroContent = {
+    title: "Skärmflyg kurser i Åre",
+    description: "A good place to start.",
+    backgroundImage: HeroImage,
+    overlayOpacity: 0.2
+}
 
 ---
 
 
 <Layout >
-	<VideoHero content={VideoContent}/> 
-	
+	<!-- <VideoHero content={VideoContent}/> -->
+
+	 <Hero content={HeroContent}/>
 
 	
 
